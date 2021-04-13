@@ -1,0 +1,28 @@
+.Contact-form {
+  margin-bottom: 70px;
+}
+
+.Input-form {
+  background-color: transparent;
+  margin: 0 6px 0 6px;
+  outline: none;
+  border: 0;
+  border-bottom: 1px solid #555050;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.Button-form {
+  font-size: 17px;
+  padding: 5px;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+  border: 1px solid #555050;
+}
+
+.Button-form:hover {
+  cursor: pointer;
+  background-color: #555050;
+  color: #dee0e4;
+}

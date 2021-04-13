@@ -1,0 +1,11 @@
+table {
+  border-collapse: collapse;
+}
+
+.Table-Header th {
+  padding: 7px 50px 7px 50px;
+  border-right: 1px solid black;
+}
+.Table-Header th:last-child {
+  border-right: 0;
+}
