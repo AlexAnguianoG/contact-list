@@ -29,7 +29,12 @@ function ContactForm({ addContact }) {
   function handleSubmit(e) {
     e.preventDefault();
 
-    if (contact.name.trim() && contact.address.trim()) {
+    if (
+      contact.name.trim() &&
+      contact.address.trim() &&
+      contact.email.trim() &&
+      contact.phone.trim()
+    ) {
       id++;
       addContact({ ...contact, id: id });
 
@@ -54,6 +59,7 @@ function ContactForm({ addContact }) {
         placeholder="Name"
         value={contact.name}
         onChange={handleContactNameChange}
+        required
       />
       <input
         className="Input-form"
@@ -62,6 +68,7 @@ function ContactForm({ addContact }) {
         placeholder="Address"
         value={contact.address}
         onChange={handleContactAddressChange}
+        required
       />
       <input
         className="Input-form"
@@ -70,6 +77,7 @@ function ContactForm({ addContact }) {
         placeholder="E-mail"
         value={contact.email}
         onChange={handleContactEmailChange}
+        required
       />
       <input
         className="Input-form"
@@ -78,9 +86,9 @@ function ContactForm({ addContact }) {
         placeholder="Telephone number"
         pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
         maxLength="10"
-        title="Ten digits code"
         value={contact.phone}
         onChange={handleContactTelephoneChange}
+        required
       />
       <button className="Button-form" type="submit">
         Add

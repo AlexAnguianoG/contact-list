@@ -10,10 +10,11 @@
   align-items: center;
   justify-content: center;
   font-size: calc(6px + 2vmin);
-  color: #555050;
+  color: #363333;
+  font-weight: 300;
 }
 
 .title {
   font-size: 50px;
-  margin: 0 0 15px 0;
+  margin: 0 0 50px 0;
 }

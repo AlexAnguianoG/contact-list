@@ -10,6 +10,13 @@
   border-bottom: 1px solid #555050;
   font-size: 20px;
   padding: 5px;
+  font-family: "Lexend", sans-serif;
+  font-weight: 300 !important;
+}
+
+.Input-form:focus:required:invalid {
+  border-color: red;
+  font-weight: bold;
 }
 
 .Button-form {

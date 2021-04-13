@@ -1,10 +1,12 @@
 table {
   border-collapse: collapse;
+  width: 100px;
 }
 
 .Table-Header th {
   padding: 7px 50px 7px 50px;
   border-right: 1px solid black;
+  font-weight: 500;
 }
 .Table-Header th:last-child {
   border-right: 0;
